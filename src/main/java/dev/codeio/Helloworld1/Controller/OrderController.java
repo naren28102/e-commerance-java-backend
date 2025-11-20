@@ -57,4 +57,15 @@ public class OrderController {
         orderService.deleteOrder(id);
         return ResponseEntity.ok("Order deleted successfully with ID: " + id);
     }
+    
+    @GetMapping("/status")
+    public ResponseEntity<String> getOrderStatus(@RequestParam Long id) {
+    	boolean status=true;
+		if (status != true) {
+			return ResponseEntity.ok("Order status for ID " + id + ": " + status);
+		}
+		return ResponseEntity.status(HttpStatus.NOT_FOUND)
+				.body("Order not found with ID: " + id);
+	}
+    
 }
