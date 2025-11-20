@@ -16,11 +16,11 @@ public class ProductData {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 	@Column
-	String productName;
+	private String productName;
 	@Column
 	String Description;
 	@Column
-	int prices;
+	String prices;
 	@Column
 	String Images;
 	@Column
@@ -39,10 +39,10 @@ public class ProductData {
 	public void setDescription(String description) {
 		Description = description;
 	}
-	public int getPrices() {
+	public String getPrices() {
 		return prices;
 	}
-	public void setPrices(int prices) {
+	public void setPrices(String prices) {
 		this.prices = prices;
 	}
 	public String getImages() {

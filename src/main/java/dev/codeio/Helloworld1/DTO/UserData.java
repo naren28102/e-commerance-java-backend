@@ -17,6 +17,8 @@ public class UserData {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 	@Column
+	private String password;
+	@Column
 	private String name;
 	@Column
 	private String phoneNumber;
@@ -48,6 +50,12 @@ public class UserData {
 	}
 	public void setAddress(String address) {
 		this.address = address;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
 	}
 
 }

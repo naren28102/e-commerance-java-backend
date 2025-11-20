@@ -10,7 +10,7 @@ public class ProductService {
 		p1.setProductName("AC");
 		p1.setDescription("LG 1ton with stazbler");
 		p1.setCustomerReviews("Good");
-		p1.setPrices(30000);
+		p1.setPrices("30000");
 		p1.setImages("IMg.png");
 		p1.setSpecification("1ton");
 		return p1;

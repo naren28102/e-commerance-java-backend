@@ -14,6 +14,5 @@ public class UserService {
 		u1.setAddress("NO 49/14 Mayladurai");
 		return u1;
 		
-	}
-	
+	}	
 }
